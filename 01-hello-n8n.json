@@ -1,0 +1,65 @@
+{
+  "name": "01-hello-n8n",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "066aac42-b0e2-4a5d-9eb8-feab0c6c0186",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3790b0d5-73a4-494e-962f-1fddd050502a",
+              "name": "message",
+              "value": "שלום n8n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "bcf85e00-d420-4d52-ac57-700b88f961ab",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "22efd93a-9de9-46c2-b13e-a4ea98483f28",
+  "meta": {
+    "instanceId": "e6e7a219a0ffce15d460db662d36adf541149df9950ed90b0206035a3344614e"
+  },
+  "nodeGroups": [],
+  "id": "fvCgO8nCVfB8UYFI",
+  "tags": []
+}
